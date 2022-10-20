@@ -37,7 +37,13 @@ public class App {
 		if(number <= 1) {
 			return false;
 		}
-		for(int i = 2; i < Math.sqrt(number); i++) {
+                else if(number == 2){
+                        return true;
+                }
+                else if(0 == number % 2){
+                        return false;
+                }
+		for(int i = 3; i < Math.sqrt(number); i+=2) {
 			if(0 == number % i) {
 				return false;
 			}
