@@ -43,7 +43,7 @@ public class App {
                 else if(0 == number % 2){
                         return false;
                 }
-		for(int i = 3; i < Math.sqrt(number); i+=2) {
+		for(int i = 3; i <= Math.sqrt(number); i+=2) {
 			if(0 == number % i) {
 				return false;
 			}
